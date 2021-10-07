@@ -12,7 +12,7 @@ The project report contains the definition and the expression of :
 * [Detection at Receiver](#Detection-at-Receiver)
 * [Model of Wireless Communication system](#Model-of-Wireless-Communication-system)
 * [Probability error expression](#Probability-error-expression)
-
+* [Average BER](#Average-BER)
 
 ## BER
 The BER is the average rate of bit error. For instance, if 10 000 bits are transmetted and 100 bits are received in error, then the average BER:
@@ -48,7 +48,7 @@ The noise probability density function for a zero 0 and noise power ![](https://
 
 The shape of the pdf is as depicted in the Figure below:
 
-![](Figure/transportedfir.png)
+![](Figure/pdfnoise.png)
 
 ## Probability error expression
 
