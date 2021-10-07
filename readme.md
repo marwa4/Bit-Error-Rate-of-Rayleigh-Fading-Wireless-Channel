@@ -16,13 +16,13 @@ The project report contains the definition and the expression of :
 
 ## BER
 The BER is the average rate of bit error. For instance, if 10 000 bits are transmetted and 100 bits are received in error, then the average BER:
-![equation](https://latex.codecogs.com/gif.latex?%5Cfrac%7B%5Ctext%7BNumber%20of%20bits%20in%20error%7D%7D%7B%5Ctext%7BTotal%20number%20of%20bits%20transmitted%7D%7D%20%3D%20%5Cfrac%7B100%7D%7B10000%7D%20%3D%201%25)
+![equation](https://latex.codecogs.com/gif.latex %5Cfrac%7B%5Ctext%7BNumber%20of%20bits%20in%20error%7D%7D%7B%5Ctext%7BTotal%20number%20of%20bits%20transmitted%7D%7D%20%3D%20%5Cfrac%7B100%7D%7B10000%7D%20%3D%201%25)
 
 Since the transmitted and the received bits are random quantities, the BER can also be expressed as probability known as the probability of bit error.
 
 ## Information bits
 
-Note that the information bits are modulated prior to transmission over the channel. One such modulation format is BPSK : Binary Phase Shift Keying, in which, the information symbol 0 is modulated as []!(https://latex.codecogs.com/gif.latex?%5Csqrt%7BP%7D) and the infomation symbol 1 is modulated as []!(https://latex.codecogs.com/gif.latex?-%5Csqrt%7BP%7D).
+Note that the information bits are modulated prior to transmission over the channel. One such modulation format is BPSK : Binary Phase Shift Keying, in which, the information symbol 0 is modulated as ![](https://latex.codecogs.com/gif.latex?%5Csqrt%7BP%7D) and the infomation symbol 1 is modulated as ![](https://latex.codecogs.com/gif.latex?-%5Csqrt%7BP%7D).
 So, there are two phases 0 and 180 degrees. The average power of this modulation format is P.
 
 ## Detection at Receiver
@@ -35,7 +35,7 @@ This is a threshold based detection.
 
 In the figure bellow, we present a simple model of a wireless communication system, where x is the transmitted symbol, y the received symbol, h is the fading coefficient and n is the noise at the receiver.
 
-![](Figures/transportedfir.png)
+![](Figures/modelRayleighFading.png)
 
 The received symbol is expressed as :
 
@@ -87,5 +87,5 @@ The average BER is then given by:
 
 Through our simulation using Python, the resulted BER curve against the theoretical probability of error is depicted in the figure below: 
 
-![](Figures/berawgn.png)
+![](Figures/berrayleigh.png)
 
