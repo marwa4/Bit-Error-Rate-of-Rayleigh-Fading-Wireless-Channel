@@ -8,15 +8,16 @@ and we present its bit error rate performance.
 
 The project report contains the definition and the expression of : 
 * [Bit Error Rate ](#BER)
-* [Information bits](#Information bits)
-* [Detection at Receiver](#Detection at Receiver)
-* [Model of Wireless Communication system](#Model of Wireless Communication system)
-* [Probability error expression](#Probability error expression)
+* [Information bits](#Information-bits)
+* [Detection at Receiver](#Detection-at-Receiver)
+* [Model of Wireless Communication system](#Model-of-Wireless-Communication-system)
+* [Probability error expression](#Probability-error-expression)
 
 
 ## BER
 The BER is the average rate of bit error. For instance, if 10 000 bits are transmetted and 100 bits are received in error, then the average BER:
-![equation](https://latex.codecogs.com/gif.latex %5Cfrac%7B%5Ctext%7BNumber%20of%20bits%20in%20error%7D%7D%7B%5Ctext%7BTotal%20number%20of%20bits%20transmitted%7D%7D%20%3D%20%5Cfrac%7B100%7D%7B10000%7D%20%3D%201%25)
+![equation1](https://latex.codecogs.com/gif.latex?%5Cfrac%7B%5Ctext%7BNumber%20of%20bits%20in%20error%7D%7D%7B%5Ctext%7BTotal%20number%20of%20bits%20transmitted%7D%7D%20%3D%20%5Cfrac%7B100%7D%7B10000%7D%20%3D%201%25)
+
 
 Since the transmitted and the received bits are random quantities, the BER can also be expressed as probability known as the probability of bit error.
 
@@ -35,7 +36,7 @@ This is a threshold based detection.
 
 In the figure bellow, we present a simple model of a wireless communication system, where x is the transmitted symbol, y the received symbol, h is the fading coefficient and n is the noise at the receiver.
 
-![](Figures/modelRayleighFading.png)
+![](Figure/modelRayleighFading.png)
 
 The received symbol is expressed as :
 
@@ -47,7 +48,7 @@ The noise probability density function for a zero 0 and noise power ![](https://
 
 The shape of the pdf is as depicted in the Figure below:
 
-![](Figures/transportedfir.png)
+![](Figure/transportedfir.png)
 
 ## Probability error expression
 
@@ -65,7 +66,7 @@ This corresponds to the ![](https://latex.codecogs.com/gif.latex?Q%28%5Csqrt%7B%
 
 
 By defining the SNR : Signal to Noise Power Ratio by : 
-![equation] (https://latex.codecogs.com/gif.latex?%5Ctext%7BSNR%7D%20%3D%20%5Cfrac%7BP%7D%7B%5Csigma%5E2%7D)
+![equation1](https://latex.codecogs.com/gif.latex?%5Ctext%7BSNR%7D%20%3D%20%5Cfrac%7BP%7D%7B%5Csigma%5E2%7D)
 
 The received power is ![](https://latex.codecogs.com/gif.latex?|h|^2&space;P&space;=&space;a^2&space;P), thus, the fading SNR ![](https://latex.codecogs.com/gif.latex?\text{SNR}_F&space;=&space;\frac{a^2&space;P}{\sigma^2}&space;=&space;a^2&space;\text{SNR}).
 
@@ -87,5 +88,5 @@ The average BER is then given by:
 
 Through our simulation using Python, the resulted BER curve against the theoretical probability of error is depicted in the figure below: 
 
-![](Figures/berrayleigh.png)
+![](Figure/berrayleigh.png)
 
